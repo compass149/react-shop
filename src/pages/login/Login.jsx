@@ -67,7 +67,7 @@ const Login=()=>{
     
             <form onSubmit={handleLogin} noValidate className={submitted ? 'was-validated' : ''}>
               <div className="form-group my-2">
-                <label htmlFor="username">유저이름</label>
+                <label htmlFor="username">아이디</label>
                 <input
                   type="text"
                   name="username"
@@ -77,7 +77,7 @@ const Login=()=>{
                   onChange={handleChange}
                   required
                 />
-                <div className="invalid-feedback">유저네임을 입력해주세요</div>
+                <div className="invalid-feedback">아이디를 입력해주세요</div>
               </div>
     
               <div className="form-group my-2">

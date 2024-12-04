@@ -47,7 +47,7 @@ const Register =() =>{
         .catch((error)=>{
             console.log(error);
             if(error?.response?.status===409){
-                setErrorMessage("usernaem 또는 password가 틀립니다.")
+                setErrorMessage("아이디가 중복되었습니다.")
             }else{
                 setErrorMessage("예상치 못한 에러가 발생했습니다.")
             }
